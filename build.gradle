@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group 'kentohummer.mockitoextend'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:latest.release'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:latest.release'
+
+    testImplementation 'org.mockito:mockito-core:latest.release'
+    testImplementation 'org.mockito:mockito-junit-jupiter:latest.release'
+}
+
+test {
+    useJUnitPlatform()
+}
